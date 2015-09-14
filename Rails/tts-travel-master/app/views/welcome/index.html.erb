@@ -1,0 +1,15 @@
+<h1>Welcome to the places I have travelled, I hope you enjoy the pictures.</h1>
+<p>Enjoy my site.</p>
+
+<!-- correct -->
+<%= @homeland %>
+
+<ol>
+  <% @countries.each do |country| %>
+    <li><%= country %></li>
+  <% end %>
+</ol>
+
+<% @images.each do |image| %>
+  <%= image_tag image, :class => "img-responsive" %>
+<% end %>
